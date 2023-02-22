@@ -7,7 +7,7 @@ export const connector = (chains: Chain[]) => {
   return new ArcanaConnector({
     chains,
     options: {
-      appId: `9e0c6715d9ea7aab73535c8c359d8b45ac2587bc`,
+      clientId: `xar_test_b2dde12aad64eb35d72b2c80926338e178b1fa3f`,
     },
   });
 };
