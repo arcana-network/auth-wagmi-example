@@ -2,18 +2,17 @@
 # yarn lockfile v1
 
 
-"@arcana/auth-wagmi@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@arcana/auth-wagmi/-/auth-wagmi-0.0.3.tgz#e1e80940850339011d258f3a7fc55f4908225058"
-  integrity sha512-uotmn/sf1YA5mFOuBMPEMYUajink9QIKMYOhF/yjZmbBMK3gyz8qjui59PCiVBgeNs2SPClQ1wqn3mYjbH7oQg==
+"@arcana/auth-wagmi@1.0.0-beta.1":
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@arcana/auth-wagmi/-/auth-wagmi-1.0.0-beta.1.tgz#d9a5250e7b6d001cba524e2d6f2bbdd44f7b21c3"
+  integrity sha512-UBZA3zdnd/6Z9mQrGyg6kbPJng71a8mP3eZc+R5z1rHMwjA9aqus1GGd/PVYmqzyBYL7n03ScUXn40IH0A/GUw==
   dependencies:
-    "@arcana/auth" "^1.0.2"
     "@wagmi/core" "0.9.5"
 
-"@arcana/auth@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@arcana/auth/-/auth-1.0.2.tgz#ce03785b9fd2b2ba4d5c8113286c45f78d170ce7"
-  integrity sha512-U+eZunnbMUmTLiJUNJtzicnehm8Lwu9IVIOoRB7NYoYl5ct7/gOWrE21xsMT7VHilJHW0tNZZJxmWHYX8XQPHw==
+"@arcana/auth@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@arcana/auth/-/auth-1.0.3.tgz#10008e95e9c43b5bafaf9a35ae8261c028975619"
+  integrity sha512-Ab6UoxqlsruzWZ3XPBL8jdfrW2GmU7F4dec7Qic/L6jePQTxjOkSkXqrTnZ8Zo4Ew3A/6r6j/8HcjbgFAyBoBQ==
   dependencies:
     "@metamask/safe-event-emitter" "^2.0.0"
     eth-rpc-errors "^4.0.3"
