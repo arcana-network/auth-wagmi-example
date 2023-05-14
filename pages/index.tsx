@@ -1,3 +1,4 @@
+import { ArcanaConnector } from "@arcana/auth-wagmi";
 import { useEffect, useState } from "react";
 import { useAccount, useConnect } from "wagmi";
 
@@ -26,20 +27,43 @@ export default function Home() {
   } else {
     return (
       <div className="main">
-        {!isConnected &&
-          connectors.map((connector) => (
-            <button
-              className="connect-btn"
-              key={connector.id}
-              onClick={() => connect({ connector })}
-            >
-              Connect to {connector.name}
-              {isLoading &&
-                pendingConnector?.id === connector.id &&
-                " (connecting)"}
-            </button>
-          ))}
-        {error && <div>{error.message}</div>}
+        <div>
+          {!isConnected &&
+            connectors.map((connector) => (
+              <>
+                <button
+                  className="connect-btn"
+                  key={connector.id}
+                  onClick={() => connect({ connector })}
+                >
+                  Connect to {connector.name}
+                  {isLoading &&
+                    pendingConnector?.id === connector.id &&
+                    " (connecting)"}
+                </button>
+                <div>
+                  <button
+                    className="connect-btn"
+                    key={connector.id}
+                    onClick={() => {
+                      if (connector.id == "arcana") {
+                        (connector as ArcanaConnector).setLogin({
+                          provider: "google",
+                        });
+                      }
+                      connect({ connector });
+                    }}
+                  >
+                    Connect to {connector.name} (google)
+                    {isLoading &&
+                      pendingConnector?.id === connector.id &&
+                      " (connecting)"}
+                  </button>
+                </div>
+              </>
+            ))}
+        </div>
+        {error && <div className="error-box">{error.message}</div>}
       </div>
     );
   }

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@arcana/auth-wagmi@1.0.0-beta.2":
-  version "1.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@arcana/auth-wagmi/-/auth-wagmi-1.0.0-beta.2.tgz#32cc0f43e55076af4a514462e73123eb80fa19dc"
-  integrity sha512-eRkiOYsVJ5WzNatJujTzNYcu6tM4I4/kHcsIU30tVoX5LgjckLXr+Km4vPzlRMfh51mAEZA1OyBj/uHU+M/UzQ==
+"@arcana/auth-wagmi@1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@arcana/auth-wagmi/-/auth-wagmi-1.0.0-beta.3.tgz#2274a271554baa6d4c1b9c2292509ef3a43d548a"
+  integrity sha512-qZxnitPwtFeOh1K9X/S3+ksvxIpOGK/3UPRCCIZw51pNY4VQySVLjh5b2HCEVKqz+Gzvvx4RUHpW0YaBLzzk3Q==
   dependencies:
     "@wagmi/core" "^0.10.9"
 
