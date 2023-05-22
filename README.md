@@ -1,4 +1,4 @@
-This is a `@arcana/auth-wagmi` integration example in NextJS.
+This is a `@arcana/auth-wagmi@1.0.0` integration example in NextJS.
 
 ## Getting Started
 
