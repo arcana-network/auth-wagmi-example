@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@arcana/auth-wagmi": "^0.0.3",
+    "@arcana/auth": "^1.0.3",
+    "@arcana/auth-wagmi": "1.0.0-beta.3",
     "@next/font": "13.1.6",
     "@types/node": "18.13.0",
     "@types/react": "18.0.27",
@@ -21,6 +22,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5",
-    "wagmi": "^0.11.5"
+    "wagmi": "^0.12.10"
   }
 }
