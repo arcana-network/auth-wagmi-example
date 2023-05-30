@@ -114,6 +114,8 @@ a {
   background: white;
   color: black;
   cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .connect-btn:hover {
@@ -124,11 +126,18 @@ a {
   border: 1px solid white;
 }
 
+.error-box {
+  padding: 10px 10px;
+  border: 3px solid red;
+  margin-top: 10px;
+}
+
 .main {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .connected-msg {
