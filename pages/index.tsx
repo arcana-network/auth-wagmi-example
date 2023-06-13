@@ -47,7 +47,7 @@ export default function Home() {
                     key={connector.id}
                     onClick={() => {
                       if (connector.id == "arcana") {
-                        (connector as ArcanaConnector).setLogin({
+                        (connector as unknown as ArcanaConnector).setLogin({
                           provider: "google",
                         });
                       }
