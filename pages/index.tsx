@@ -1,6 +1,7 @@
+import { USDCAbi } from "@/utils/constants";
 import { ArcanaConnector } from "@arcana/auth-wagmi";
 import { useEffect, useState } from "react";
-import { useAccount, useConnect } from "wagmi";
+import { useAccount, useConnect, useContractWrite } from "wagmi";
 
 export default function Home() {
   const { connect, connectors, error, isLoading, pendingConnector } =
@@ -8,6 +9,14 @@ export default function Home() {
   const { connector, address, isConnected, status } = useAccount();
 
   const [isMounted, setIsMounted] = useState(false);
+
+  const { data, write, writeAsync } = useContractWrite({
+    abi: USDCAbi,
+    address: "0xdA5289fCAAF71d52a80A254da614a192b693e977",
+    functionName: "approve",
+    args: ["0x0000000000000000000000000000000000000000", 10000000 * 10 ** 6], // using zero address
+    chainId: 80001, // specify chain id here
+  });
 
   useEffect(() => {
     setIsMounted(true);
@@ -22,6 +31,7 @@ export default function Home() {
         <div className="connected-msg">
           Connected to {connector?.name} with address {address}
         </div>
+        <button onClick={() => write?.()}>Write</button>
       </div>
     );
   } else {
